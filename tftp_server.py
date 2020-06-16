@@ -1,5 +1,4 @@
 # There is NO off-the-shelf TFTP libraries used.
-# All of these libraries are allowed for the project
 import socket # python socket library
 from threading import Thread # python thread library
 import sys # handles command-line argument
@@ -7,8 +6,6 @@ import random # randomly selects ephemeral port
 import struct # used to support binary mode
 
 # reference: specification at https://tools.ietf.org/html/rfc1350
-
-# main is at the bottom
 
 def put_file(filename, user_ip,user_port):
     socket_put = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
